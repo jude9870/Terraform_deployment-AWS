@@ -1,5 +1,5 @@
 # Deploiement dans AWS avec Terraform
-La configuration Terraform dans ce repository permet de deployer une instance EC2, un VPC, un security group et un backend S3 sur un provide AWS.
+La configuration Terraform dans ce repo permet de deployer une instance EC2, un VPC, un security group et un backend S3 sur le provider AWS.
 ## Prerequis
 Des prérequis sont nécessaire avant d'effectuer une création d'instance :
 - Installation de Terraform : https://devopssec.fr/article/installer-configurer-environnement-terraform
