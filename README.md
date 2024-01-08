@@ -42,3 +42,9 @@ terraform destroy -var-file="terraform.tfvars"
 
 
 ```
+
+
+## Annexe
+### Problèmes rencontrés lors de la création
+
+Lors de la création de mon fichier Terraform, j'ai rencontré des problèmes avec la création du VPC. Mon instance réclamait un groupID. Après plusieurs recherches, j'ai donc trouvé la commande "vpc_security_group_ids =". Une fois ajouté, celui-ci m'indiquait qu'il était vide alors qu'il dirigeait correctement vers le groupe de sécurité. En effectuant des recherches, je suis tombé sur les subnet associé au VPC, je l'ai donc ajouté dans mon code. Après cela, tout fonctionne comme souhaité : mon instance se génère bien ainsi que le groupe de sécurité et le VPC sur mon compte AWS.
